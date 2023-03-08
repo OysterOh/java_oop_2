@@ -3,7 +3,16 @@ package oop.poly.casting;
 230307 
 */
 public class MainClass {
+/*
+ * 참조 변수의 타입 변환
+자바에서는 참조 변수도 다음과 같은 조건에 따라 타입 변환을 할 수 있습니다.
 
+1. 서로 상속 관계에 있는 클래스 사이에만 타입 변환을 할 수 있습니다.
+
+2. 자식 클래스 타입에서 부모 클래스 타입으로의 타입 변환은 생략할 수 있습니다.
+
+3. 하지만 부모 클래스 타입에서 자식 클래스 타입으로의 타입 변환은 반드시 명시해야 합니다.
+ */
 	public static void main(String[] args) {
 
 		Parent p = new Parent();

@@ -62,7 +62,7 @@ public class MainClass {
 		
 		Car c = (Tesla) kim.buyCar("테슬라");  //형변환
 		c.run();
-		Tesla t5 = (Tesla) c;
+		Tesla t5 =  (Tesla) c;
 		t5.enterMembership();
 		
 		CarShop shop = new CarShop();

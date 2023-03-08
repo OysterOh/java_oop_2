@@ -43,10 +43,10 @@ public class ArrayInsert {
 			arr[i] = p;
 			*/
         
-			arr[i]= new Person(name, age, gender);
+			arr[i]= new Person(name, age, gender); 
+			// 메소드의 인수로 배열을 선언하면서 초기화해야 할 경우
 			
 			System.out.println("**정보 입력 완료**\n"); //Person객체에 입력 완료
-			
 			
 		}  //입력받는 반복문 끝
 		

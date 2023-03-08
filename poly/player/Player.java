@@ -1,7 +1,8 @@
-package oop.this_super;
+package oop.poly.player;
 /** 
 230306 
  */
+
 public class Player {
 
 	String name;
@@ -9,6 +10,7 @@ public class Player {
 	int atk;
 	int hp;
 
+	
 	/*
 	 # this
 	 
@@ -26,6 +28,7 @@ public class Player {
 		this.level = 1;    //앞에 this 생략 this.level = 1;
 		this.atk = 3;
 		this.hp = 50;
+		
 	}
 	
 	//2
@@ -76,5 +79,4 @@ public class Player {
 		System.out.println("#체력: " + hp);
 		// System.out.println("지금 이 메서드를 호출한 객체의 이름: " + this.name);
 	}
-	
 }
