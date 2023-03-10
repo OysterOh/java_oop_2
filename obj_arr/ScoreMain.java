@@ -22,41 +22,76 @@ public class ScoreMain {
          주의!) 입력이 중간에 그만두어진다면, 배열의 나머지 인덱스는
          모두 null로 가득 차 있습니다. (null.scoreInfo() -> 에러)
 		 */
-		Scanner sc = new Scanner(System.in);
 		Score[]scores = new Score[100];
-		int idx = 0;
-
-		while(true) {
-			System.out.print("이름:");
-			String name = sc.nextLine();	
-
+		Scanner sc = new Scanner(System.in);
+//		int idx = 0;
+		
+		for(int i =0; i<scores.length; i++) {
+			System.out.println("그만 입력하면 종료됩니다");
+			
+			System.out.print("이름: ");
+			String name = sc.next();
+			
 			if(name.equals("그만")) {
+				System.out.println("입력 종료");
 				break;
-			}
-
+		    }
 			System.out.print("국어: ");
 			int kor = sc.nextInt();
-			sc.nextLine();
-
 			System.out.print("영어: ");
 			int eng = sc.nextInt();
-			sc.nextLine();
-
 			System.out.print("수학: ");
 			int math = sc.nextInt();
-			sc.nextLine();
-
-			Score score = new Score(name, kor, eng, math);
-			scores[idx++] = score;
+			
+//			int total = kor+eng+math;
+//			double avg = total/ 3.0;
+//			
+//			scores[i] = new Score(name, kor, eng, math, total, avg);
+			
+			
+			scores[i] = new Score(name, kor, eng, math);
+		}//입력 반복문
+		
+		for(Score s : scores) {   // for(자료형 변수명 : 배열명) 
+			if(s == null) break;
+			s.scoreInfo();
+			System.out.println("----------------------");
 		}
-
-		for(int i=0; i<idx; i++) {
+		sc.close();
+		
+		
+//		while(true) {
+//			System.out.print("이름:");
+//			String name = sc.nextLine();	
+//
+//			if(name.equals("그만")) {
+//				break;
+//			}
+//
+//			System.out.print("국어: ");
+//			int kor = sc.nextInt();
+//			sc.nextLine();
+//
+//			System.out.print("영어: ");
+//			int eng = sc.nextInt();
+//			sc.nextLine();
+//
+//			System.out.print("수학: ");
+//			int math = sc.nextInt();
+//			sc.nextLine();
+//
+//			Score score = new Score(name, kor, eng, math);
+//			scores[idx++] = score;
+//		}
+//
+//		for(int i=0; i<idx; i++) {
 //			if(scores[i] == null) {
 //			}
 				
-			scores[i].scoreInfo();
-		}
-		sc.close();
+//			scores[i].scoreInfo();
+//		}
+		
+//		sc.close();
 
 	}
 }

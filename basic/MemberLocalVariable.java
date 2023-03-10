@@ -23,15 +23,15 @@ public class MemberLocalVariable {
 	
 	void printNumber(int c) {   //매개변수(일종의 지역변수)
 		int b = 1;   //지역변수
-		System.out.println("멤버변수 a: " + a);
+		System.out.println("멤버변수 a: " + a); //0 기본값
 		System.out.println("지역변수 b: " + b);
-		System.out.println("매개변수 c: " + c);
+		System.out.println("매개변수 c: " + c); //여기서 출력
 	}
 	
 	public static void main(String[] args) {
 
 		MemberLocalVariable m =new MemberLocalVariable();
-		m.printNumber(4);
+		m.printNumber(4);  //여기서 시키고
 
 		
 		

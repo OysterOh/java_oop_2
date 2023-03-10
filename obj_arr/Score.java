@@ -18,19 +18,18 @@ public class Score {
 	private int eng; private int math; private int total; 
 	private double avg;
 	
-	public Score(String name, int kor, int eng, int math) {
+	public Score(String name, int kor, int eng, int math 
+			) {
+		super();
 		this.name = name;
 		this.kor = kor;
-		this.eng = eng;
 		this.math = math;
+		this.eng = eng;
 		this.total = kor + eng + math;
-		this.avg = total/3;
+		this.avg = total/3.0;
 	}
 	
-	public void scoreInfo() {
-		System.out.printf("이름: %s, 국어: %d, 수학: %d, 영어: %d, 총점: %d, 평균: %d"
-				, name, kor, math, eng, total, avg);
-	}
+	
 
 	public String getName() {
 		return name;
@@ -80,6 +79,11 @@ public class Score {
 		this.avg = avg;
 	}
 	
+	public void scoreInfo() {
+		System.out.printf("이름: %s, 국어: %d, 수학: %d, 영어: %d\n, "
+				+ "총점: %d, 평균: %.2f"
+				, name, kor, math, eng, total, avg);
+	}
 	
 
 		
