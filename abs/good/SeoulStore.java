@@ -17,7 +17,7 @@ public class SeoulStore extends HeadStore{
 
 	@Override
 	public void orderGrape() {
-		System.out.println("포도쥬스의 가격은 2500원 입니다.");		
+		System.out.println("포도쥬스의 가격은 2500원 입니다.");	
 	}
 
 	

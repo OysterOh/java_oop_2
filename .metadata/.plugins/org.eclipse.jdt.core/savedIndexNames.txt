@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+C:\Work\java_work\java_oop_2\.metadata\.plugins\org.eclipse.jdt.core
